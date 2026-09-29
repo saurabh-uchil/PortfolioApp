@@ -9,7 +9,7 @@ export const heroContent = {
     { label: "Download CV", href: "#download-cv", icon: "download" },
   ],
   image: {
-    src: "/assets/hero.png",
+    src: "/assets/sample.png",
     alt: "Professional holding a tablet in a bright architectural setting",
   },
 } as const;
