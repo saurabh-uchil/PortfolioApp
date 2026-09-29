@@ -6,50 +6,29 @@ import { Button } from "../ui/Button/Button";
 
 export function Hero() {
   return (
-    <section
-      className={heroStyles.section}
-      aria-labelledby="hero-title"
-    >
-      <div
-        className={heroStyles.background}
-        aria-hidden="true"
-      />
+    <section className={heroStyles.section} aria-labelledby="hero-title">
+      <div className={heroStyles.background} aria-hidden="true" />
 
       <div className={heroStyles.container}>
         {/* Hero Content */}
         <div className={heroStyles.content}>
-          <p className={heroStyles.eyebrow}>
-            {heroContent.eyebrow}
-          </p>
+          <p className={heroStyles.eyebrow}>{heroContent.eyebrow}</p>
 
-          <h1
-            className={heroStyles.title}
-            id="hero-title"
-          >
+          <h1 className={heroStyles.title} id="hero-title">
             {heroContent.title}
-
             <span className={heroStyles.titleEmphasis}>
               {heroContent.emphasis}
             </span>
           </h1>
 
-          <p className={heroStyles.description}>
-            {heroContent.description}
-          </p>
+          <p className={heroStyles.description}>{heroContent.description}</p>
 
-          <div
-            className={heroStyles.actions}
-            aria-label="Hero actions"
-          >
+          <div className={heroStyles.actions} aria-label="Hero actions">
             {heroContent.actions.map((action) => (
               <Button
                 href={action.href}
                 key={action.label}
-                variant={
-                  action.icon === "arrow"
-                    ? "dark"
-                    : "outline"
-                }
+                variant={action.icon === "arrow" ? "dark" : "outline"}
               >
                 {action.icon === "download" && (
                   <svg
@@ -68,9 +47,7 @@ export function Hero() {
 
                 {action.label}
 
-                {action.icon === "arrow" && (
-                  <span aria-hidden="true">→</span>
-                )}
+                {action.icon === "arrow" && <span aria-hidden="true">→</span>}
               </Button>
             ))}
           </div>
@@ -78,10 +55,7 @@ export function Hero() {
 
         {/* Hero Image */}
         <div className={heroStyles.imageWrapper}>
-          <div
-            className={heroStyles.imageFade}
-            aria-hidden="true"
-          />
+          <div className={heroStyles.imageFade} aria-hidden="true" />
 
           <Image
             className={heroStyles.image}
