@@ -1,13 +1,25 @@
 export const navbarStyles = {
+  wrapper:
+    "w-full border-b border-border bg-surface",
+
   header:
-    "mx-auto flex w-full max-w-(--container-width) flex-wrap items-center gap-x-8 gap-y-4 border-b border-border bg-background px-6 py-5 sm:px-12 lg:flex-nowrap lg:px-16",
-  brand: "shrink-0 font-sans text-text-primary",
-  brandName: "block text-lg font-bold leading-none tracking-tight sm:text-xl",
-  brandSubtitle: "mt-1 block text-xs leading-none text-text-primary",
+    "mx-auto flex w-full max-w-(--container-width) items-center gap-x-8 px-6 py-4 sm:px-12 lg:px-16",
+
+  brand:
+    "shrink-0 font-sans text-text-primary",
+
+  brandName:
+    "block text-lg font-bold leading-none tracking-tight sm:text-xl",
+
+  brandSubtitle:
+    "mt-1 block text-xs leading-none text-text-secondary",
+
   navigation:
-    "order-3 flex w-full items-center gap-6 overflow-x-auto font-sans text-[13px] text-text-primary lg:order-none lg:w-auto lg:flex-1 lg:justify-center",
+    "flex items-center gap-7 font-sans text-[13px] text-text-primary lg:flex-1 lg:justify-center",
+
   navigationLink:
-    "border-b border-transparent pb-1 transition-colors hover:border-text-primary focus-visible:border-text-primary focus-visible:outline-none",
+    "border-b border-transparent pb-1 transition-colors hover:border-accent focus-visible:border-accent focus-visible:outline-none",
+
   cta:
-    "ml-auto inline-flex shrink-0 items-center gap-2 bg-text-primary px-4 py-3 text-xs font-semibold text-background transition-colors hover:bg-[#303030] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text-primary sm:px-5",
+    "inline-flex shrink-0 items-center gap-2 bg-button-dark px-5 py-3 text-xs font-semibold !text-white transition-colors hover:bg-button-dark-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-button-dark",
 } as const;

@@ -16,6 +16,9 @@
 
   --border: #dedbd4;
 
+  --button-dark: #11161d;
+  --button-dark-hover: #252b33;
+
   --container-width: 1440px;
 }
 
@@ -34,6 +37,9 @@
   --color-accent-dark: var(--accent-dark);
 
   --color-border: var(--border);
+
+  --color-button-dark: var(--button-dark);
+  --color-button-dark-hover: var(--button-dark-hover);
 
   --font-sans: var(--font-dm-sans);
   --font-serif: var(--font-dm-serif-display);
