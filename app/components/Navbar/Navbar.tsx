@@ -4,6 +4,7 @@ import {
   navbarCta,
   navbarLinks,
 } from "./Navbar.data";
+import { Button } from "../ui/Button/Button";
 import { navbarStyles } from "./styles";
 
 type NavbarProps = {
@@ -44,10 +45,10 @@ export function Navbar({
           ))}
         </nav>
 
-        <a className={navbarStyles.cta} href={navbarCta.href}>
+        <Button className="shrink-0" href={navbarCta.href}>
           {navbarCta.label}
           <span aria-hidden="true">→</span>
-        </a>
+        </Button>
       </div>
     </header>
   );
