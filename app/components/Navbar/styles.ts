@@ -5,9 +5,9 @@ export const navbarStyles = {
   brandName: "block text-lg font-bold leading-none tracking-tight sm:text-xl",
   brandSubtitle: "mt-1 block text-xs leading-none text-text-primary",
   navigation:
-    "order-3 flex w-full items-center gap-6 overflow-x-auto font-sans text-xs text-text-primary lg:order-none lg:w-auto lg:flex-1 lg:justify-center",
+    "order-3 flex w-full items-center gap-6 overflow-x-auto font-sans text-[13px] text-text-primary lg:order-none lg:w-auto lg:flex-1 lg:justify-center",
   navigationLink:
-    "border-b border-transparent pb-1 transition-colors hover:border-accent hover:text-accent focus-visible:border-accent focus-visible:text-accent focus-visible:outline-none",
+    "border-b border-transparent pb-1 transition-colors hover:border-text-primary focus-visible:border-text-primary focus-visible:outline-none",
   cta:
-    "ml-auto inline-flex shrink-0 items-center gap-2 bg-text-primary px-4 py-3 text-xs font-semibold text-background transition-colors hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent sm:px-5",
+    "ml-auto inline-flex shrink-0 items-center gap-2 bg-text-primary px-4 py-3 text-xs font-semibold text-background transition-colors hover:bg-[#303030] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-text-primary sm:px-5",
 } as const;
