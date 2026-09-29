@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { navbarBrandName, navbarBrandSubtitle } from "./Navbar.data";
 import { navbarStyles } from "./styles";
 
@@ -12,10 +14,10 @@ export function Navbar({
 }: NavbarProps) {
   return (
     <header className={navbarStyles.header}>
-      <a className={navbarStyles.brand} href="/" aria-label={`${brandName} home`}>
+      <Link className={navbarStyles.brand} href="/" aria-label={`${brandName} home`}>
         <span className={navbarStyles.brandName}>{brandName}</span>
         <span className={navbarStyles.brandSubtitle}>{brandSubtitle}</span>
-      </a>
+      </Link>
     </header>
   );
 }
