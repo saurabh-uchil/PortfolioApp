@@ -1,7 +1,9 @@
+import { Navbar } from "./components/Navbar/Navbar";
+
 export default function Home() {
   return (
     <main>
-      <h1>Coming soon</h1>
+      <Navbar />
     </main>
   );
 }
