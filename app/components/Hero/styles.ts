@@ -18,6 +18,10 @@ export const heroStyles = {
   description:
     "mt-7 max-w-md text-base leading-relaxed text-text-secondary sm:text-[17px]",
 
+  actions: "mt-8 flex flex-wrap gap-3",
+
+  downloadIcon: "size-4",
+
   imageWrapper: "relative min-h-[400px] overflow-hidden md:order-none md:min-h-0",
 
   image: "object-cover object-[62%_center]",
