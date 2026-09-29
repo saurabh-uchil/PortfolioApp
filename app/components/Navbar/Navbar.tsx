@@ -1,6 +1,9 @@
-import Link from "next/link";
-
-import { navbarBrandName, navbarBrandSubtitle } from "./Navbar.data";
+import {
+  navbarBrandName,
+  navbarBrandSubtitle,
+  navbarCta,
+  navbarLinks,
+} from "./Navbar.data";
 import { navbarStyles } from "./styles";
 
 type NavbarProps = {
@@ -14,10 +17,23 @@ export function Navbar({
 }: NavbarProps) {
   return (
     <header className={navbarStyles.header}>
-      <Link className={navbarStyles.brand} href="/" aria-label={`${brandName} home`}>
+      <a className={navbarStyles.brand} href="#top" aria-label={`${brandName} home`}>
         <span className={navbarStyles.brandName}>{brandName}</span>
         <span className={navbarStyles.brandSubtitle}>{brandSubtitle}</span>
-      </Link>
+      </a>
+
+      <nav className={navbarStyles.navigation} aria-label="Primary navigation">
+        {navbarLinks.map((link) => (
+          <a className={navbarStyles.navigationLink} href={link.href} key={link.href}>
+            {link.label}
+          </a>
+        ))}
+      </nav>
+
+      <a className={navbarStyles.cta} href={navbarCta.href}>
+        {navbarCta.label}
+        <span aria-hidden="true">→</span>
+      </a>
     </header>
   );
 }
