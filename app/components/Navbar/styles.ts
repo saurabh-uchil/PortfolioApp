@@ -19,7 +19,4 @@ export const navbarStyles = {
 
   navigationLink:
     "border-b border-transparent pb-1 transition-colors hover:border-accent focus-visible:border-accent focus-visible:outline-none",
-
-  cta:
-    "inline-flex shrink-0 items-center gap-2 bg-button-dark px-5 py-3 text-xs font-semibold !text-white transition-colors hover:bg-button-dark-hover focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-button-dark",
 } as const;
