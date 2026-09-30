@@ -12,10 +12,10 @@ export const navbarStyles = {
     "block text-lg font-bold leading-none tracking-tight sm:text-xl",
 
   brandSubtitle:
-    "mt-1 block text-xs leading-none text-text-secondary",
+    "mt-1 block text-ui leading-none text-text-secondary",
 
   navigation:
-    "hidden items-center gap-7 font-sans text-[13px] text-text-primary lg:flex lg:flex-1 lg:justify-center",
+    "hidden items-center gap-7 font-sans text-nav text-text-primary lg:flex lg:flex-1 lg:justify-center",
 
   navigationLink:
     "border-b border-transparent pb-1 transition-colors hover:border-accent focus-visible:border-accent focus-visible:outline-none",
@@ -33,7 +33,7 @@ export const navbarStyles = {
     "mx-auto flex w-full max-w-(--container-width) flex-col gap-1 px-6 py-5 sm:px-12",
 
   mobileNavigationLink:
-    "py-3 text-sm font-medium text-text-primary transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none",
+    "py-3 text-small font-medium text-text-primary transition-colors hover:text-accent focus-visible:text-accent focus-visible:outline-none",
 
   mobileCta:
     "mt-4 w-full justify-center",

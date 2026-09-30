@@ -9,5 +9,5 @@ export const heroDetailsStyles = {
     "mt-0.5 size-5 shrink-0 text-text-primary",
 
   text:
-    "flex min-w-0 flex-col text-sm leading-relaxed text-text-primary",
+    "flex min-w-0 flex-col text-small leading-relaxed text-text-primary",
 } as const;
