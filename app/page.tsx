@@ -1,3 +1,4 @@
+import {About} from "./components/About/About";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
 import {PracticeAreas} from "./components/PracticeAreas/PracticeAreas";
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <PracticeAreas />
+      <About />
     </main>
   );
 }
