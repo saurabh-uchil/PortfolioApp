@@ -6,8 +6,7 @@ export const aboutStatsStyles = {
     "flex items-start gap-4",
 
   iconWrapper:
-    "flex size-10 shrink-0 items-center justify-center rounded-full bg-surface",
-
+  "flex size-10 shrink-0 items-center justify-center rounded-full border border-[#cfcac2] bg-surface shadow-sm",
   icon:
     "size-5 text-accent",
 
