@@ -9,7 +9,7 @@ export const aboutContent = {
   eyebrow: "About Me",
 
   title:
-    "A lawyer, researcher and LL.M. candidate.",
+    "A LAWYER, RESEARCHER AND LL.M. CANDIDATE.",
 
   description:
     "I am an advocate with experience in commercial and regulatory matters. I am currently pursuing an LL.M., where I am deepening my understanding of international and comparative legal frameworks, with a particular interest in the intersection of law, technology and society.",

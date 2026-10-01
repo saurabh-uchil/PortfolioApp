@@ -14,9 +14,7 @@ export function Carousel() {
 
     if (!viewport) return;
 
-    const card = viewport.querySelector<HTMLElement>(
-      "[data-carousel-card]",
-    );
+    const card = viewport.querySelector<HTMLElement>("[data-carousel-card]");
 
     if (!card) return;
 
@@ -37,10 +35,7 @@ export function Carousel() {
           className={carouselStyles.control}
           onClick={() => scrollByCard("previous")}
         >
-          <ChevronLeft
-            className={carouselStyles.icon}
-            aria-hidden="true"
-          />
+          <ChevronLeft className={carouselStyles.icon} aria-hidden="true" />
         </button>
 
         <button
@@ -49,17 +44,11 @@ export function Carousel() {
           className={carouselStyles.control}
           onClick={() => scrollByCard("next")}
         >
-          <ChevronRight
-            className={carouselStyles.icon}
-            aria-hidden="true"
-          />
+          <ChevronRight className={carouselStyles.icon} aria-hidden="true" />
         </button>
       </div>
 
-      <div
-        ref={viewportRef}
-        className={carouselStyles.viewport}
-      >
+      <div ref={viewportRef} className={carouselStyles.viewport}>
         <div className={carouselStyles.track}>
           {practiceAreas.map((practiceArea) => (
             <div
@@ -71,6 +60,7 @@ export function Carousel() {
                 icon={practiceArea.icon}
                 title={practiceArea.title}
                 description={practiceArea.description}
+                image={practiceArea.image}
               />
             </div>
           ))}
