@@ -1,7 +1,6 @@
 export const aboutIntroStyles = {
   wrapper:
-    "flex flex-col justify-center px-6 py-16 sm:px-12 lg:px-16",
-
+  "flex flex-col justify-center border-r border-border px-6 py-16 sm:px-12 lg:px-16",
   eyebrow:
     "text-eyebrow font-semibold uppercase tracking-[0.14em] text-accent",
 

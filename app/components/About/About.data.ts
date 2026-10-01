@@ -1,18 +1,14 @@
-import {
-  BriefcaseBusiness,
-  FileText,
-  Gavel,
-  Scale,
-} from "lucide-react";
+import { BriefcaseBusiness, FileText, Gavel, Scale } from "lucide-react";
 
 export const aboutContent = {
   eyebrow: "About Me",
 
-  title:
-    "A LAWYER, RESEARCHER AND LL.M. CANDIDATE.",
+  title: "A LAWYER, RESEARCHER AND LL.M. CANDIDATE.",
 
   description:
     "I am an advocate with experience in commercial and regulatory matters. I am currently pursuing an LL.M., where I am deepening my understanding of international and comparative legal frameworks, with a particular interest in the intersection of law, technology and society.",
+
+  imageQuote: "A lawyer with a curiosity for what comes next.",
 } as const;
 
 export const aboutStats = [
