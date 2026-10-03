@@ -1,39 +1,27 @@
 export const timelineStyles = {
-  wrapper: "relative",
+  wrapper: "relative w-full",
 
   item:
-    "relative border-b border-border py-5 last:border-b-0",
-
-  experienceItem:
-    "grid min-w-0 grid-cols-[80px_minmax(0,1fr)] gap-6",
-
-  educationItem:
-    "grid min-w-0 grid-cols-[24px_minmax(0,1fr)] gap-6",
-
-  marker:
-    "absolute top-1/2 size-2 -translate-y-1/2 rounded-full bg-accent",
-
-  experienceMarker:
-    "left-[80px] -translate-x-1/2",
-
-  educationMarker:
-    "left-[4px] -translate-x-1/2",
+    "relative grid grid-cols-[82px_20px_minmax(0,1fr)] gap-3",
 
   period:
-    "text-small text-text-secondary",
+    "pt-1 text-small leading-tight text-text-secondary",
 
-  experienceContent:
-    "min-w-0 w-full border-l border-border pl-6",
+  track:
+    "relative flex justify-center before:absolute before:bottom-0 before:left-1/2 before:top-0 before:w-px before:-translate-x-1/2 before:bg-border before:content-['']",
 
-  educationContent:
-    "min-w-0 w-full border-l border-border pl-6",
+  dot:
+    "relative z-10 mt-2 size-2 shrink-0 rounded-full bg-accent",
+
+  content:
+    "min-w-0 pb-6",
 
   title:
-    "text-small font-semibold text-text-primary",
+    "text-small font-semibold leading-tight text-text-primary",
 
   subtitle:
     "mt-1 text-small leading-relaxed text-text-secondary",
 
   meta:
-    "text-small leading-relaxed text-text-muted",
+    "text-small leading-relaxed text-text-secondary",
 } as const;

@@ -1,5 +1,3 @@
-import { ArrowRight } from "lucide-react";
-
 import {
   experienceContent,
   experienceItems,
@@ -24,16 +22,9 @@ export function Experience() {
             {experienceContent.description}
           </p>
 
-          <a href="#contact" className={experienceStyles.link}>
-            {experienceContent.linkLabel}
-            <ArrowRight
-              className={experienceStyles.linkIcon}
-              aria-hidden="true"
-            />
-          </a>
         </div>
 
-        <Timeline items={experienceItems} variant="experience" />
+        <Timeline items={experienceItems} />
       </div>
     </section>
   );

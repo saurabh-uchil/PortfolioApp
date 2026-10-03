@@ -1,4 +1,5 @@
 import {About} from "./components/About/About";
+import { Education } from "./components/Education/Education";
 import { Experience } from "./components/Experience/Experience";
 import { Hero } from "./components/Hero/Hero";
 import { Navbar } from "./components/Navbar/Navbar";
@@ -12,6 +13,7 @@ export default function Home() {
       <PracticeAreas />
       <About />
       <Experience />
+      <Education />
     </main>
   );
 }

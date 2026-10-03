@@ -1,12 +1,10 @@
 import { TimelineItem } from "../ui/Timeline/Timeline";
 
-
 export const experienceContent = {
   eyebrow: "Experience",
   title: "Building experience through practice.",
   description:
-    "My experience spans civil litigation, court appearances, legal research, drafting and dispute resolution across a range of legal forums.",
-  linkLabel: "View full experience",
+    "From court appearances to drafting and client coordination, my experience has given me exposure to a wide range of civil and criminal matters across different courts and forums.",
 } as const;
 
 export const experienceItems: readonly TimelineItem[] = [
