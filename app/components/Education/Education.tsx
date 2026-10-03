@@ -10,10 +10,7 @@ export function Education() {
   return (
     <section id="education" className={educationStyles.section}>
       <div className={educationStyles.container}>
-        <Timeline
-          items={educationItems}
-          variant="education"
-        />
+       
 
         <div className={educationStyles.intro}>
           <p className={educationStyles.eyebrow}>
