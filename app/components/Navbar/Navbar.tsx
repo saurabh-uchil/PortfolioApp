@@ -13,14 +13,23 @@ import {
 import { Button } from "../ui/Button/Button";
 import { navbarStyles } from "./styles";
 
+type NavbarLink = {
+  label: string;
+  href: string;
+};
+
 type NavbarProps = {
   brandName?: string;
   brandSubtitle?: string;
+  navLinks?: readonly NavbarLink[];
+  showCta?: boolean;
 };
 
 export function Navbar({
   brandName = navbarBrandName,
   brandSubtitle = navbarBrandSubtitle,
+  navLinks = navbarLinks,
+  showCta = true,
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -48,52 +57,58 @@ export function Navbar({
         </a>
 
         {/* Desktop Navigation */}
-        <nav
-          className={navbarStyles.navigation}
-          aria-label="Primary navigation"
-        >
-          {navbarLinks.map((link) => (
-            <a
-              className={navbarStyles.navigationLink}
-              href={link.href}
-              key={link.href}
-            >
-              {link.label}
-            </a>
-          ))}
-        </nav>
+        {navLinks.length > 0 && (
+          <nav
+            className={navbarStyles.navigation}
+            aria-label="Primary navigation"
+          >
+            {navLinks.map((link) => (
+              <a
+                className={navbarStyles.navigationLink}
+                href={link.href}
+                key={link.href}
+              >
+                {link.label}
+              </a>
+            ))}
+          </nav>
+        )}
 
         {/* Desktop CTA */}
-        <div className={navbarStyles.desktopCtaWrapper}>
-          <Button href={navbarCta.href}>
-            {navbarCta.label}
-            <span aria-hidden="true">→</span>
-          </Button>
-        </div>
+        {showCta && (
+          <div className={navbarStyles.desktopCtaWrapper}>
+            <Button href={navbarCta.href}>
+              {navbarCta.label}
+              <span aria-hidden="true">→</span>
+            </Button>
+          </div>
+        )}
 
         {/* Mobile Menu Button */}
-        <button
-          type="button"
-          className={navbarStyles.menuButton}
-          onClick={() => setIsMenuOpen((open) => !open)}
-          aria-label={
-            isMenuOpen
-              ? "Close navigation menu"
-              : "Open navigation menu"
-          }
-          aria-expanded={isMenuOpen}
-          aria-controls="mobile-navigation"
-        >
-          {isMenuOpen ? (
-            <X size={22} aria-hidden="true" />
-          ) : (
-            <Menu size={22} aria-hidden="true" />
-          )}
-        </button>
+        {navLinks.length > 0 && (
+          <button
+            type="button"
+            className={navbarStyles.menuButton}
+            onClick={() => setIsMenuOpen((open) => !open)}
+            aria-label={
+              isMenuOpen
+                ? "Close navigation menu"
+                : "Open navigation menu"
+            }
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
+          >
+            {isMenuOpen ? (
+              <X size={22} aria-hidden="true" />
+            ) : (
+              <Menu size={22} aria-hidden="true" />
+            )}
+          </button>
+        )}
       </div>
 
       {/* Mobile Navigation */}
-      {isMenuOpen && (
+      {navLinks.length > 0 && isMenuOpen && (
         <div
           id="mobile-navigation"
           className={navbarStyles.mobileMenu}
@@ -102,7 +117,7 @@ export function Navbar({
             className={navbarStyles.mobileNavigation}
             aria-label="Mobile navigation"
           >
-            {navbarLinks.map((link) => (
+            {navLinks.map((link) => (
               <a
                 className={navbarStyles.mobileNavigationLink}
                 href={link.href}
@@ -114,14 +129,16 @@ export function Navbar({
             ))}
 
             {/* Mobile CTA */}
-            <Button
-              className={navbarStyles.mobileCta}
-              href={navbarCta.href}
-              onClick={closeMenu}
-            >
-              {navbarCta.label}
-              <span aria-hidden="true">→</span>
-            </Button>
+            {showCta && (
+              <Button
+                className={navbarStyles.mobileCta}
+                href={navbarCta.href}
+                onClick={closeMenu}
+              >
+                {navbarCta.label}
+                <span aria-hidden="true">→</span>
+              </Button>
+            )}
           </nav>
         </div>
       )}

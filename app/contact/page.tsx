@@ -1,7 +1,9 @@
+import { Navbar } from "../components/Navbar/Navbar";
+
 const page = () => {
   return (
     <div>
-      this is the contacts  page
+      <Navbar navLinks={[]} showCta={false} />
     </div>
   )
 }

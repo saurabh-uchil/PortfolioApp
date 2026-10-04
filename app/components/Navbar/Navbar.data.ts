@@ -11,9 +11,7 @@ export const navbarLinks: readonly NavbarLink[] = [
   { label: "About", href: "#about" },
   { label: "Practice Areas", href: "#practice-areas" },
   { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
-  { label: "Insights", href: "#insights" },
-  { label: "Contact", href: "#contact" },
+  { label: "Education", href: "#education" }
 ];
 
 export const navbarCta = {
