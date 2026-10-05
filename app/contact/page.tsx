@@ -1,11 +1,13 @@
+import { ContactHeader } from "../components/Contact/Header/Header";
 import { Navbar } from "../components/Navbar/Navbar";
 
-const page = () => {
+const ContactPage = () => {
   return (
-    <div>
+    <main>
       <Navbar navLinks={[]} showCta={false} />
-    </div>
+      <ContactHeader />
+    </main>
   )
 }
 
-export default page
+export default ContactPage;
