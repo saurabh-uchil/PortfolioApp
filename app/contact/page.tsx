@@ -1,13 +1,20 @@
 import { ContactHeader } from "../components/Contact/Header/Header";
+import { Tabs } from "../components/Contact/Tabs/Tabs";
+import { Footer } from "../components/Footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
+import { contactStyles } from "./styles";
 
 const ContactPage = () => {
   return (
-    <main>
-      <Navbar navLinks={[]} showCta={false} />
-      <ContactHeader />
-    </main>
-  )
+    <section className={contactStyles.section}>
+      <Navbar navLinks={[]}/>
+      <div className={contactStyles.container}>
+        <ContactHeader />
+        <Tabs />
+      </div>
+      <Footer />
+    </section>
+  );
 }
 
 export default ContactPage;

@@ -1,7 +1,3 @@
 export const footerContent = {
-  title: "Get in touch",
-  email: "kashviail1234@gmail.com",
-  linkedin: "LinkedIn",
-  location: "Mumbai, India",
-  cta: "Schedule a Call",
+  copyright: "© 2026 Kashvi Ail. All rights reserved.",
 } as const;
