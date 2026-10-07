@@ -5,5 +5,5 @@ export const contactHeaderContent = {
     lineTwo: "AND TALK.",
   },
   description:
-    "Whether you would like to schedule a call or send a message, choose the option that works best for you.",
+  "For consultations, legal enquiries, or further information, please get in touch.",
 } as const;
