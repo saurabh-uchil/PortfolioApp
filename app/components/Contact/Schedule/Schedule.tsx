@@ -1,3 +1,4 @@
+import { Calendly } from "../../ui/Calendly/Calendly";
 import { scheduleContent } from "./Schedule.data";
 import { scheduleStyles } from "./styles";
 
@@ -18,9 +19,7 @@ export function Schedule() {
         </p>
       </div>
 
-      <div className={scheduleStyles.calendar}>
-        <p>Calendly scheduler will appear here.</p>
-      </div>
+      <Calendly url={scheduleContent.calendlyUrl} title={scheduleContent.calendlyTitle} />
     </div>
   );
 }
