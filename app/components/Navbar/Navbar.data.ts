@@ -16,5 +16,5 @@ export const navbarLinks: readonly NavbarLink[] = [
 
 export const navbarCta = {
   label: "Schedule a Call",
-  href: "#contact",
+  href: "/contact",
 } as const;

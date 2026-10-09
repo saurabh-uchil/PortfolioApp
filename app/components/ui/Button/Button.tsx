@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { AnchorHTMLAttributes, ReactNode } from "react";
 
 import { buttonStyles } from "./styles";
@@ -16,6 +17,8 @@ export function Button({
   className,
   size = "medium",
   variant = "dark",
+  href = "#",
+  download,
   ...props
 }: ButtonProps) {
   const classes = [
@@ -27,9 +30,24 @@ export function Button({
     .filter(Boolean)
     .join(" ");
 
+  // Use a regular anchor for downloads.
+  if (download !== undefined) {
+    return (
+      <a
+        className={classes}
+        href={href}
+        download={download}
+        {...props}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  // Use Next.js Link for navigation.
   return (
-    <a className={classes} {...props}>
+    <Link className={classes} href={href} {...props}>
       {children}
-    </a>
+    </Link>
   );
 }

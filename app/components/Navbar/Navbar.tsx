@@ -12,6 +12,7 @@ import {
 
 import { Button } from "../ui/Button/Button";
 import { navbarStyles } from "./styles";
+import Link from "next/link";
 
 type NavbarLink = {
   label: string;
@@ -21,6 +22,7 @@ type NavbarLink = {
 type NavbarProps = {
   brandName?: string;
   brandSubtitle?: string;
+  brandHref?: string;
   navLinks?: readonly NavbarLink[];
   showCta?: boolean;
 };
@@ -28,6 +30,7 @@ type NavbarProps = {
 export function Navbar({
   brandName = navbarBrandName,
   brandSubtitle = navbarBrandSubtitle,
+  brandHref = "#top",
   navLinks = navbarLinks,
   showCta = true,
 }: NavbarProps) {
@@ -41,20 +44,20 @@ export function Navbar({
     <header className={navbarStyles.wrapper}>
       <div className={navbarStyles.header}>
         {/* Brand */}
-        <a
-          className={navbarStyles.brand}
-          href="#top"
-          aria-label={`${brandName} home`}
-          onClick={closeMenu}
-        >
-          <span className={navbarStyles.brandName}>
-            {brandName}
-          </span>
+        <Link
+  className={navbarStyles.brand}
+  href={brandHref}
+  aria-label={`${brandName} home`}
+  onClick={closeMenu}
+>
+  <span className={navbarStyles.brandName}>
+    {brandName}
+  </span>
 
-          <span className={navbarStyles.brandSubtitle}>
-            {brandSubtitle}
-          </span>
-        </a>
+  <span className={navbarStyles.brandSubtitle}>
+    {brandSubtitle}
+  </span>
+</Link>
 
         {/* Desktop Navigation */}
         {navLinks.length > 0 && (

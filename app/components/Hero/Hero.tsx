@@ -44,6 +44,7 @@ export function Hero() {
             ? "dark"
             : "outline"
         }
+        download={action.icon === "download" ? true : undefined}
       >
         {action.icon === "download" && (
           <svg

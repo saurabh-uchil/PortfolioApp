@@ -25,9 +25,7 @@ export const heroStyles = {
 
   downloadIcon: "size-4",
 
-  imageWrapper:
-    "relative -mr-6 min-h-[420px] overflow-hidden sm:-mr-12 md:-mr-[calc((100vw-var(--container-width))/2)] md:min-h-0",
-
+  imageWrapper: "relative min-h-[420px] overflow-hidden md:min-h-0",
   image: "object-cover object-[68%_center]",
 
   imageFade:

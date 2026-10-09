@@ -7,7 +7,7 @@ import { contactStyles } from "./styles";
 const ContactPage = () => {
   return (
     <section className={contactStyles.section}>
-      <Navbar navLinks={[]}/>
+      <Navbar navLinks={[]} showCta={false} brandHref="/"/>
       <div className={contactStyles.container}>
         <ContactHeader />
         <Tabs />

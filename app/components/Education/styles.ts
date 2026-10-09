@@ -5,10 +5,8 @@ export const educationStyles = {
   container:
     "relative z-10 mx-auto grid w-full max-w-(--container-width) grid-cols-1 gap-10 px-6 py-12 sm:px-12 sm:py-14 lg:grid-cols-[58%_42%] lg:items-center lg:gap-12 lg:px-16 lg:py-12 xl:px-20",
 
-  intro: "max-w-lg",
-
-  eyebrow:
-    "text-eyebrow font-semibold uppercase tracking-[0.14em] text-accent",
+  intro: "max-w-lg order-first lg:order-last",
+  eyebrow: "text-eyebrow font-semibold uppercase tracking-[0.14em] text-accent",
 
   title:
     "mt-4 font-sans text-2xl font-bold leading-tight tracking-[-0.04em] text-text-primary sm:text-3xl lg:text-4xl",
