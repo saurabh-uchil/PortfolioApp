@@ -1,20 +1,33 @@
-import { ContactHeader } from "../components/Contact/Header/Header";
-import { Tabs } from "../components/Contact/Tabs/Tabs";
 import { Footer } from "../components/Footer/Footer";
 import { Navbar } from "../components/Navbar/Navbar";
-import { contactStyles } from "./styles";
+import { Booking } from "./Booking/Booking";
+import { ContactDetails } from "./Details/Details";
 
-const ContactPage = () => {
+import { ContactIntro } from "./Intro/Intro";
+import { testStyles } from "./styles";
+
+const Test = () => {
   return (
-    <section className={contactStyles.section}>
-      <Navbar navLinks={[]} showCta={false} brandHref="/"/>
-      <div className={contactStyles.container}>
-        <ContactHeader />
-        <Tabs />
-      </div>
+    <section className={testStyles.section}>
+      <Navbar navLinks={[]} showCta={false} brandHref="/" />
+
+<main className={testStyles.main}>
+  <div
+    aria-hidden="true"
+    className={testStyles.mainBackground}
+  />
+
+  <ContactIntro />
+
+  <div className={testStyles.contentLayout}>
+    <ContactDetails />
+    <Booking />
+  </div>
+</main>
+
       <Footer />
     </section>
   );
-}
+};
 
-export default ContactPage;
+export default Test;

@@ -1,7 +1,12 @@
-export const contactStyles = {
-  section:
-    "w-full bg-background",
+export const testStyles = {
+  section: "min-h-screen bg-background",
 
-  container:
-    "mx-auto grid w-full max-w-(--container-width) grid-cols-1 gap-4 px-6 py-8 sm:px-12 sm:py-10 lg:grid-cols-[38%_62%] lg:gap-12 lg:px-16 lg:py-16 xl:px-20",
+  main:
+    "relative isolate mx-auto w-full max-w-(--container-width) px-6 py-4 sm:px-10 sm:py-5 lg:px-16",
+
+  mainBackground:
+    "pointer-events-none absolute inset-0 -z-10 bg-[linear-gradient(135deg,transparent_0%,transparent_25%,rgba(23,23,23,0.035)_25%,rgba(23,23,23,0.035)_45%,transparent_45%,transparent_100%)]",
+
+  contentLayout:
+    "mt-8 grid grid-cols-1 items-stretch gap-6 lg:grid-cols-[0.9fr_1.1fr]",
 } as const;
