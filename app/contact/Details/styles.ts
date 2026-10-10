@@ -1,6 +1,6 @@
 export const contactDetailsStyles = {
   wrapper:
-    "flex flex-col gap-4 border border-border bg-surface p-4 sm:p-5 lg:p-6",
+    "flex flex-col gap-4 border border-border bg-surface p-4 sm:p-5 lg:border-r-[var(--accent)] lg:p-6",
 
   eyebrow: "text-eyebrow font-semibold uppercase tracking-[0.14em] text-accent",
 

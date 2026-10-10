@@ -1,5 +1,5 @@
 export const heroContent = {
-  eyebrow: "Advocate · Bombay High Court",
+  eyebrow: "LAW · RESEARCH · REGULATORY MATTERS",
   title: "LEGAL QUESTIONS?",
   emphasis: "I’LL TAKE IT FROM HERE.",
   description:

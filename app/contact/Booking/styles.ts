@@ -4,19 +4,20 @@ export const bookingStyles = {
 
   backgroundImage:
     "absolute inset-0 -z-20 h-full w-full object-cover object-center",
-  backgroundOverlay: "absolute inset-0 -z-10 bg-background/25",
 
-  header: "relative z-10 max-w-lg p-6 sm:p-8",
+  backgroundOverlay: "absolute inset-0 -z-10 bg-background/45",
 
   eyebrow: "text-eyebrow font-semibold uppercase tracking-[0.14em] text-accent",
 
   title:
     "mt-2 font-sans text-xl font-bold leading-tight tracking-[-0.03em] text-text-primary sm:text-2xl",
 
-  description: "mt-2 max-w-lg text-sm leading-relaxed text-text-secondary",
+  description: "mt-2 max-w-lg text-sm leading-relaxed text-text-primary",
+
+  header: "relative z-10 w-full max-w-lg p-6 sm:p-8",
 
   trigger:
-    "mt-4 inline-flex min-h-11 items-center justify-center gap-2 bg-button-dark px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-button-dark-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text-primary",
+    "mt-4 flex w-fit mx-auto lg:mx-0 min-h-11 items-center justify-center gap-2 bg-button-dark px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-button-dark-hover focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-text-primary",
 
   overlay:
     "fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-3 sm:p-6",

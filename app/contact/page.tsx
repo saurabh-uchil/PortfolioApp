@@ -11,19 +11,16 @@ const Test = () => {
     <section className={testStyles.section}>
       <Navbar navLinks={[]} showCta={false} brandHref="/" />
 
-<main className={testStyles.main}>
-  <div
-    aria-hidden="true"
-    className={testStyles.mainBackground}
-  />
+      <main className={testStyles.main}>
+        <div aria-hidden="true" className={testStyles.mainBackground} />
 
-  <ContactIntro />
+        <ContactIntro />
 
-  <div className={testStyles.contentLayout}>
-    <ContactDetails />
-    <Booking />
-  </div>
-</main>
+        <div className={testStyles.contentLayout}>
+          <ContactDetails />
+          <Booking />
+        </div>
+      </main>
 
       <Footer />
     </section>
