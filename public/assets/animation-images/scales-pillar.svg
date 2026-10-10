@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Scales of Justice fixed pillar and base</title>
+  <g fill="#171717">
+    <path d="M 243 110
+             C 243 96 254 86 268 86
+             C 282 86 293 96 293 110
+             L 293 431
+             C 293 444 282 454 268 454
+             C 254 454 243 444 243 431 Z"/>
+    <path d="M 160 480
+             C 176 448 218 431 268 431
+             C 318 431 360 448 376 480 Z"/>
+  </g>
+</svg>

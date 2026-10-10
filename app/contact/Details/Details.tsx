@@ -17,9 +17,6 @@ export function ContactDetails() {
       aria-labelledby="contact-details-title"
     >
       <div>
-        <p className={styles.eyebrow}>
-          {contactDetailsContent.eyebrow}
-        </p>
 
         <h2
           id="contact-details-title"

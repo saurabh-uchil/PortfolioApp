@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Scales of Justice balancing beam and pans</title>
+  <g fill="#171717" stroke="#171717" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Horizontal beam -->
+    <path d="M 78 128
+             C 78 120 84 115 92 115
+             L 420 115
+             C 428 115 434 120 434 128
+             C 434 136 428 141 420 141
+             L 92 141
+             C 84 141 78 136 78 128 Z" stroke="none"/>
+    <!-- Left suspension lines -->
+    <path d="M 145 139 L 94 306" fill="none" stroke-width="7"/>
+    <path d="M 145 139 L 197 306" fill="none" stroke-width="7"/>
+    <!-- Right suspension lines -->
+    <path d="M 367 139 L 315 306" fill="none" stroke-width="7"/>
+    <path d="M 367 139 L 418 306" fill="none" stroke-width="7"/>
+    <!-- Left pan rim and bowl -->
+    <path d="M 52 307 L 238 307 L 238 327 L 52 327 Z" stroke="none"/>
+    <path d="M 52 327
+             C 61 369 94 393 145 393
+             C 196 393 229 369 238 327 Z" stroke="none"/>
+    <!-- Right pan rim and bowl -->
+    <path d="M 274 307 L 460 307 L 460 327 L 274 327 Z" stroke="none"/>
+    <path d="M 274 327
+             C 283 369 316 393 367 393
+             C 418 393 451 369 460 327 Z" stroke="none"/>
+  </g>
+</svg>

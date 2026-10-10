@@ -1,49 +1,28 @@
-
 import Image from "next/image";
 import { scalesStyles as styles } from "./styles";
 
 export function ScalesAnimation() {
   return (
-    <span
-      className={styles.wrapper}
-      role="img"
-      aria-label="Scales of Justice"
-    >
+    <span className={styles.wrapper} role="img" aria-label="Scales of Justice">
       {/* Fixed pillar and base */}
       <Image
-        src="/assets/animation-images/scales-pillar.png"
+        src="/assets/animation-images/scales-pillar.svg"
         alt=""
+        aria-hidden="true"
         fill
-        sizes="160px"
+        sizes="1.5em"
         className={styles.pillar}
       />
 
-      {/* One connected, rotating assembly */}
-      <span className={styles.assembly} aria-hidden="true">
-        <Image
-          src="/assets/animation-images/scales-left-pan.png"
-          alt=""
-          fill
-          sizes="160px"
-          className={styles.pan}
-        />
-
-        <Image
-          src="/assets/animation-images/scales-right-pan.png"
-          alt=""
-          fill
-          sizes="160px"
-          className={styles.pan}
-        />
-
-        <Image
-          src="/assets/animation-images/scales-beam.png"
-          alt=""
-          fill
-          sizes="160px"
-          className={styles.beam}
-        />
-      </span>
+      {/* Beam, suspension lines and pans move together */}
+      <Image
+        src="/assets/animation-images/scales-assembly.svg"
+        alt=""
+        aria-hidden="true"
+        fill
+        sizes="1.5em"
+        className={styles.assembly}
+      />
     </span>
   );
 }

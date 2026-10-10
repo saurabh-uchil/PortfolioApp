@@ -1,6 +1,6 @@
 export const bookingContent = {
   eyebrow: "BOOK A CONSULTATION",
-  title: "Choose a convenient time",
+  title: "",
   description:
     "Select an available date and time for your consultation.",
   buttonLabel: "Schedule a consultation",

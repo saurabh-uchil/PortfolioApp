@@ -1,6 +1,6 @@
 export const contactDetailsContent = {
   eyebrow: "GET IN TOUCH",
-  title: "Reach me directly",
+  title: "BEGIN A CONVERSATION",
   description:
     "For consultations and legal enquiries, please get in touch using the details below.",
 

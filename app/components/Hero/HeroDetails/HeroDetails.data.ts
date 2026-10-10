@@ -5,7 +5,12 @@ import {
 } from "lucide-react";
 import { FaLinkedin } from "react-icons/fa";
 
-export const heroDetails = [
+export const heroDetails: readonly {
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
+  label: string;
+  value: string;
+  href?: string;
+}[] = [
   {
     icon: MapPin,
     label: "Mumbai,",
