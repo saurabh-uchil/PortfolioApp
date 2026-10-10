@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Stationary gavel base</title>
+  <g fill="#171717">
+    <!-- Raised rounded striking block -->
+    <path d="M 80 432
+             L 80 407
+             C 80 394 90 384 103 384
+             L 232 384
+             C 245 384 255 394 255 407
+             L 255 432 Z"/>
+    <!-- Flat lower platform -->
+    <path d="M 64 430 L 273 430 L 273 433 L 64 433 Z"/>
+  </g>
+</svg>

@@ -4,6 +4,9 @@ import { heroContent } from "./Hero.data";
 import { heroStyles } from "./styles";
 import { Button } from "../ui/Button/Button";
 import {HeroDetails} from "./HeroDetails/HeroDetails"
+import { GavelAnimation } from "../ui/Gavel/Gavel";
+import { Scale } from "lucide-react";
+import { ScalesAnimation } from "../ui/Scale/Scale";
 
 export function Hero() {
   return (
@@ -22,6 +25,7 @@ export function Hero() {
     id="hero-title"
   >
     {heroContent.title}
+     <GavelAnimation />
     <span className={heroStyles.titleEmphasis}>
       {heroContent.emphasis}
     </span>

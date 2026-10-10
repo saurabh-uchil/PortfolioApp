@@ -3,9 +3,7 @@ import { contactDetailsContent } from "./Details.data";
 import { contactDetailsStyles as styles } from "./styles";
 
 export function ContactDetails() {
-  const hasEmail =
-    contactDetailsContent.email.length > 0 &&
-    contactDetailsContent.email !== "YOUR_EMAIL_ADDRESS";
+  const hasEmail = contactDetailsContent.email.length > 0;
 
   const hasLinkedIn =
     contactDetailsContent.linkedinUrl.includes(

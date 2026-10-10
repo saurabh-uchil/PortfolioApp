@@ -105,3 +105,74 @@ a {
   background: var(--accent);
   color: #ffffff;
 }
+
+
+
+/* Gavel — stationary base, animated hammer */
+
+@keyframes gavel-tap {
+  0%,
+  65%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  72% {
+    transform: rotate(-12deg);
+  }
+
+  80% {
+    transform: rotate(5deg);
+  }
+
+  86% {
+    transform: rotate(-2deg);
+  }
+
+  92% {
+    transform: rotate(0deg);
+  }
+}
+
+.animate-gavel-tap {
+  transform-origin: 43% 43%;
+  animation: gavel-tap 3.5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-gavel-tap {
+    animation: none;
+  }
+}
+
+/* Scales of Justice — connected balancing assembly */
+
+@keyframes scales-assembly-balance {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20% {
+    transform: rotate(-4deg);
+  }
+
+  45% {
+    transform: rotate(4deg);
+  }
+
+  70% {
+    transform: rotate(-2deg);
+  }
+}
+
+.scales-assembly-balance {
+  transform-origin: 50% 24.6%;
+  animation: scales-assembly-balance 5.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scales-assembly-balance {
+    animation: none;
+  }
+}

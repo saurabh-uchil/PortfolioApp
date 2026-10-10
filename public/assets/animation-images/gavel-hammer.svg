@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Gavel hammer</title>
+  <g fill="#171717">
+    <!-- Handle: diagonal down and right, with a rounded end -->
+    <path d="M 226 222
+             L 246 211
+             L 434 321
+             C 445 327 449 340 443 351
+             C 437 362 424 366 413 359
+             L 226 249
+             C 216 243 216 230 226 222 Z"/>
+    <!-- Main tilted rectangular head -->
+    <path d="M 176 134
+             L 274 191
+             L 220 285
+             L 121 229 Z"/>
+    <!-- Upper rounded striking cap -->
+    <path d="M 185 94
+             C 191 90 199 91 206 95
+             L 298 148
+             C 307 153 310 163 305 172
+             C 300 181 290 183 281 178
+             L 188 124
+             C 179 119 175 109 180 100
+             C 181 98 183 96 185 94 Z"/>
+    <!-- Lower rounded striking cap -->
+    <path d="M 99 246
+             C 105 241 113 243 121 247
+             L 210 299
+             C 219 304 222 314 217 323
+             C 212 332 202 334 193 329
+             L 101 276
+             C 92 271 88 261 93 252
+             C 94 250 96 248 99 246 Z"/>
+  </g>
+</svg>
