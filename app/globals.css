@@ -178,3 +178,32 @@ a {
     animation: none;
   }
 }
+
+/* Error icon — continuous rotation with a pause */
+
+@keyframes error-rotate {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+
+  45%,
+  75% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-error-rotate {
+  transform-origin: center;
+  animation: error-rotate 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-error-rotate {
+    animation: none;
+  }
+}
