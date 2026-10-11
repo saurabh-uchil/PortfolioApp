@@ -5,9 +5,9 @@ export const contactDetailsContent = {
     "For consultations and legal enquiries, please get in touch using the details below.",
 
   emailLabel: "Email",
-  email: "abc@xyz.com",
+  email: process.env.NEXT_PUBLIC_CONTACT_EMAIL || "",
   emailLinkLabel: "Send an email",
 
   linkedinLabel: "LinkedIn",
-  linkedinUrl: "https://www.linkedin.com/in/kashvi-ail-5775402b1",
+  linkedinUrl: process.env.NEXT_PUBLIC_LINKEDIN_URL || "",
 } as const;

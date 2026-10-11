@@ -5,9 +5,7 @@ export const bookingContent = {
   buttonLabel: "Schedule a consultation",
   modalTitle: "Schedule your consultation",
   modalDescription: "Choose an available date and time that suits you.",
-  calendlyUrl:
-    "https://calendly.com/saurabh-uchil/30min?background_color=f7f6f2&text_color=171717&primary_color=7a2635",
-
+  calendlyUrl:process.env.NEXT_PUBLIC_CALENDLY_URL || "",
   calendlyTitle: "Schedule a consultation",
   fallbackLabel: "Open Calendly in a new tab",
   closeLabel: "Close booking dialog",

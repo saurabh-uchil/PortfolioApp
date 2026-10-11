@@ -30,7 +30,7 @@ export const heroDetails: readonly {
     icon: FaLinkedin,
     label: "Connect on",
     value: "LinkedIn",
-    href: "https://www.linkedin.com/in/kashvi-ail-5775402b1/",
+    href: process.env.NEXT_PUBLIC_LINKEDIN_URL || "",
   },
 ] as const;
 
