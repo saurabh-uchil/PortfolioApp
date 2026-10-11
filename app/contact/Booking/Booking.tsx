@@ -25,6 +25,7 @@ export function Booking() {
         fill
         sizes="(max-width: 1024px) 100vw, 55vw"
         className={styles.backgroundImage}
+        loading="eager"
       />
 
       <div
@@ -45,15 +46,18 @@ export function Booking() {
           {bookingContent.description}
         </p>
 
-        <button
-          ref={triggerRef}
-          type="button"
-          className={styles.trigger}
-          onClick={() => setIsOpen(true)}
-        >
-          {bookingContent.buttonLabel}
-          <span aria-hidden="true">↗</span>
-        </button>
+        <div className={styles.buttonWrapper}>
+          <button
+            ref={triggerRef}
+            type="button"
+            className={styles.trigger}
+            style={styles.fontSize}
+            onClick={() => setIsOpen(true)}
+          >
+            {bookingContent.buttonLabel}
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
       </div>
 
       <Modal
