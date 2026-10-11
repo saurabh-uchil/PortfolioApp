@@ -21,10 +21,11 @@ export function Experience() {
           <p className={experienceStyles.description}>
             {experienceContent.description}
           </p>
-
         </div>
 
-        <Timeline items={experienceItems} />
+        <div className={experienceStyles.timelineWrapper}>
+          <Timeline items={experienceItems} />
+        </div>
       </div>
     </section>
   );
